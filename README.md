@@ -14,5 +14,7 @@ waymore -i "http://testphp.vulnweb.com" -n -mode U | gf sqli | nuclei -t custom-
 ```
 # Updation
 ```
-cd custom-nuclei-templates/ && git pull
+cd custom-nuclei-templates/
+sudo git pull
+cd
 ```
