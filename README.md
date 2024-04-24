@@ -10,7 +10,7 @@ nuclei -ud ~/custom-nuclei-templates/
 
 # Usage
 ```
-waymore -i "http://testphp.vulnweb.com" -n -mode U | gf sqli | nuclei -t custom-nuclei-templates/ | tee sqlis.txt
+waymore -i "http://testphp.vulnweb.com" -n -mode U | gf sqli | nuclei -t ~/custom-nuclei-templates/ | tee sqlis.txt
 ```
 # Updation
 ```
