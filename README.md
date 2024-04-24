@@ -5,7 +5,7 @@
 # Installation
 ```
 git clone https://github.com/freelancermijan/custom-nuclei-templates.git
-nuclei -ud custom-nuclei-templates
+nuclei -ud ~/custom-nuclei-templates/
 ```
 
 # Usage
